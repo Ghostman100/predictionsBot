@@ -25,7 +25,7 @@ class Prediction
           if bet['id'] == id
             if bet['bet']['is_winning_bet'] == true
               Telegram.bot.request(:forwardMessage, chat_id: -1001277836279, from_chat_id: -1001396010827, message_id: messages[id])
-              Telegram.bot.send_message chat_id: -1001277836279, text: "Мы поставили #{bet['bet']['amount'].to_i} и выигрыли #{bet['bet']['amount'].to_i * bet['bet']['coef']}"
+              Telegram.bot.send_message chat_id: -1001277836279, text: "Мы поставили #{bet['bet']['amount'].to_i} и выигрыли #{(bet['bet']['amount'].to_i * bet['bet']['coef']).round(2)}"
               messages.delete(id)
               games.delete(id)
               p "true"
