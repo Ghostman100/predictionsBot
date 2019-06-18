@@ -1,0 +1,39 @@
+<div class="container-decor">
+  <div class="history-item">
+    <div class="history-table">
+      <div class="history-cell">
+        <div class="history-h1 text-green">
+          <%= params["value"] %> RUB
+        </div>
+        <div class="history-title text-green">
+          Single
+        </div>
+      </div>
+      <div class="history-cell">
+        <div class="history-sub-title">
+                        <span class="text-red">
+                            Odds: <%= params["bet"] %>
+                        </span>
+          <small class="text-green">Accepted</small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="history-title">
+      <span class="text-yellow"><%= "#{params["1st_team"]} VS #{params["2nd_team"]}" %></span>
+      <span class="text-white"><%= params["map"] %>nd map - winner</span>
+      <span class="text-white"><% params["winner"] %></span>
+    </div>
+
+    <div class="box-sub-title">ID: ...<%= @id %></div>
+    <br>
+    <div class="box-sub-title"><%= Time.zone.now.strftime("%F") %></div>
+    <div class="box-sub-title">
+      <svg class="icon-svg icon-alarm">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alarm"></use>
+      </svg>
+      <span><%= Time.zone.now.strftime("%H:%M") %> (GMT+0)</span>
+    </div>
+  </div>
+</div>

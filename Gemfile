@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'telegram-bot', '>= 0.14', git: "https://github.com/tutelaris/telegram-bot.git"
 gem 'rest-client'
+gem 'phantomjs', :require => 'phantomjs/poltergeist'
+gem "webshot"
