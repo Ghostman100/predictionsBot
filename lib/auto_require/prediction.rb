@@ -25,7 +25,7 @@ class Prediction
           if bet['id'] == id
             if bet['bet']['is_winning_bet'] == true
               ws = Webshot::Screenshot.instance
-              ws.capture "http://116.203.50.7:3000/image?value=#{bet['bet']['amount'].to_i}&bet=#{bet['bet']['coef']}&1st_team=#{bet['raw_data']['radiant_team_name']}&2nd_team=#{bet['raw_data']['dire_team_name']}&winner=#{bet['bet']['team']}", "image.png", width: 1024, height: 350
+              ws.capture "http://116.203.50.7:3000/image?value=#{bet['bet']['amount'].to_i}&bet=#{bet['bet']['coef']}&1st_team=#{bet['raw_data']['radiant_team_name']}&2nd_team=#{bet['raw_data']['dire_team_name']}&winner=#{bet['bet']['team']}&map=#{pr['raw_data']['map'][-1]}", "image.png", width: 1024, height: 350
               photo = File.new("image.png", 'r')
               Telegram.bot.request(:forwardMessage, chat_id: -1001277836279, from_chat_id: -1001396010827, message_id: messages[id])
               Telegram.bot.request :sendPhoto, chat_id: -1001277836279,
