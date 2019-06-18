@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddf1858e-4bae-4b53-8c58-751ebee8039c" name="Default Changelist" comment="" />
+    <list default="true" id="ddf1858e-4bae-4b53-8c58-751ebee8039c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -43,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/lib/auto_require/prediction.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="27" column="254" lean-forward="true" selection-start-line="27" selection-start-column="254" selection-end-line="27" selection-end-column="254" />
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -101,6 +103,11 @@
         <option value="Ruby File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pr</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -310,15 +317,16 @@
       <workItem from="1560767066268" duration="4345000" />
       <workItem from="1560771617398" duration="301000" />
       <workItem from="1560833574820" duration="365000" />
-      <workItem from="1560834615291" duration="6404000" />
+      <workItem from="1560834615291" duration="8221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32612000" />
+    <option name="totallyTimeSpent" value="34429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.26662973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -432,7 +440,7 @@
     <entry file="file://$PROJECT_DIR$/lib/auto_require/prediction.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="27" column="254" lean-forward="true" selection-start-line="27" selection-start-column="254" selection-end-line="27" selection-end-column="254" />
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
