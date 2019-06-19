@@ -29,7 +29,7 @@ class Prediction
               photo = File.new("image.png", 'r')
               Telegram.bot.request(:forwardMessage, chat_id: -1001277836279, from_chat_id: -1001396010827, message_id: messages[id])
               Telegram.bot.request :sendPhoto, chat_id: -1001277836279,
-                                   caption: "Мы поставили #{bet['bet']['amount'].to_i} и выигрыли #{bet['bet']['amount'].to_i * bet['bet']['coef']}",
+                                   caption: "Мы поставили #{bet['bet']['amount'].to_i} и выиграли #{(bet['bet']['amount'].to_i * bet['bet']['coef']).round(2)}",
                                    photo: photo
               photo.close
               messages.delete(id)

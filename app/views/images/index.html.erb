@@ -14,7 +14,10 @@
                         <span class="text-red">
                             Odds: <%= params["bet"] %>
                         </span>
-          <small class="text-green">Accepted</small>
+          <small class="text-green">Win</small>
+          <b>
+            <%= params["value"].to_i * params["bet"].to_i %> RUB
+          </b>
         </div>
       </div>
     </div>
