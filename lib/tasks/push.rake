@@ -3,8 +3,8 @@ task push: :environment do
   messages = {}
   while (true)
     begin
-      a = RestClient.get 'http://tds-vk-1.ru/betting_games/predictions?bankroll=2000&betting_site=ws_gg11_bet'
-      b = JSON.parse(a.body)
+      # a = RestClient.get 'http://tds-vk-1.ru/betting_games/predictions?bankroll=2000&betting_site=ws_gg11_bet'
+      # b = JSON.parse(a.body)
       r = RestClient.get 'http://tds-vk-1.ru/bets/details.json'
       bets = JSON.parse(r.body)
       bets.each do |pr|
@@ -17,7 +17,6 @@ task push: :environment do
           end
         end
       end
-      p games
       games, messages = Prediction.result(games, messages)
       p games
     rescue

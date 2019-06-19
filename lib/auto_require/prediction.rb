@@ -15,7 +15,6 @@ class Prediction
   end
 
   def self.result(games, messages)
-    p games
     r = RestClient.get 'http://tds-vk-1.ru/bets/details.json'
     bets = JSON.parse(r.body)
     games.each do |id|
@@ -39,7 +38,6 @@ class Prediction
             else
               messages.delete(id)
               games.delete(id)
-              p id
               p "false"
               p bet['bet']['is_winning_bet']
             end
@@ -50,7 +48,6 @@ class Prediction
         end
       end
     end
-    p games
     return games, messages
   end
 
