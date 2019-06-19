@@ -21,7 +21,7 @@ task push: :environment do
       games, messages = Prediction.result(games, messages)
       p games
     rescue
-      p 'Ошибка #{$!.inspect}'
+      p "Ошибка #{$!.inspect}"
     end
     sleep(10)
   end
