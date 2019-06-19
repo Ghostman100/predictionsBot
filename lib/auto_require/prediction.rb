@@ -43,8 +43,6 @@ class Prediction
             end
             break
           end
-        else
-          break
         end
       end
     end
