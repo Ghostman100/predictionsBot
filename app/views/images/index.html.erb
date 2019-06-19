@@ -16,7 +16,7 @@
                         </span>
           <small class="text-green">Win</small>
           <b>
-            <%= params["value"].to_i * params["bet"].to_i %> RUB
+            <%= (params["value"].to_f * params["bet"].to_f).round(2) %> RUB
           </b>
         </div>
       </div>
