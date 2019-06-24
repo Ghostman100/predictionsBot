@@ -32,3 +32,4 @@
 nohup.out
 config/database.yml
 config/initializers/bot_initializer.rb
+.idea/workspace.xml
