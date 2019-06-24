@@ -31,12 +31,12 @@
 
     <div class="box-sub-title">ID: ...<%= @id %></div>
     <br>
-    <div class="box-sub-title"><%= Time.zone.now.strftime("%F") %></div>
+    <div class="box-sub-title"><%= @time.strftime("%F") %></div>
     <div class="box-sub-title">
       <svg class="icon-svg icon-alarm">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#alarm"></use>
       </svg>
-      <span><%= Time.zone.now.strftime("%H:%M") %> (GMT+0)</span>
+      <span><%=  @time.strftime("%H:%M (GTM%:z)") %></span>
     </div>
   </div>
 </div>
